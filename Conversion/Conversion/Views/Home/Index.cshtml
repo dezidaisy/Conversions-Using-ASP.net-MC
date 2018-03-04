@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<form method="post" enctype="multipart/form-data" asp-controller="Conversion" asp-action="Index">
+
+    <h3>Conversions</h3>
+    <table class="form-group">
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+        <tr>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>
+                <label class="control-label">&nbsp;&nbsp;Metric</label>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <label class="control-label">&nbsp;&nbsp;Imperial</label>
+            </td>
+        </tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+        <tr>
+            <td>
+                <label class="control-label" for="Celsius">Temperature&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            </td>
+            <td>
+                <input type="number" step="any" class="form-horizontal" name="Celsius" placeholder="Enter value" value="@HomeController.CUnit.celsius" runat="server">&nbsp;Celsius
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <input type="number" step="any" class="form-horizontal" name="Fahrenheit" placeholder="Enter value" value="@HomeController.CUnit.fahrenheit" runat="server">&nbsp;Fahrenheit
+            </td>
+        </tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+        <tr>
+            <td>
+                <label class="control-label" for="Meters">Length</label>
+            </td>
+
+            <td>
+                <input type="number" step="any" class="Meters" name="Meters" placeholder="Enter value" value="@HomeController.CUnit.meters" runat="server">&nbsp;Meters
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <input type="number" step="any" class="Feet" name="Feet" placeholder="Enter value" value="@HomeController.CUnit.feet" runat="server">&nbsp;Feet
+            </td>
+        </tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+        <tr>
+            <td>
+                <label class="control-label" for="Kg">Weight</label>
+            </td>
+            <td>
+                <input type="number" step="any" class="form-horizontal" name="Kg" placeholder="Enter value" value="@HomeController.CUnit.kg" runat="server">&nbsp;Kg
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <input type="number" step="any" class="form-horizontal" name="Pounds" placeholder="Enter value" value="@HomeController.CUnit.pounds" runat="server">&nbsp;Pounds
+            </td>
+        </tr>
+    </table>
+    <div class="checkbox">
+        <label>
+            <input type="radio" name="UnitType" value="Imperial">&nbsp; Metric to Imperial<br>
+            <input type="radio" name="UnitType" value="Metric" required="required">&nbsp;Imperial to Metric<br>
+        </label>
+    </div>
+    <input type="button" class="btn btn-default" name="reset" value="Reset" onclick="customReset();" />
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<script type="text/javascript">
+    function customReset() {
+        document.getElementsByName("Celsius")[0].value = "0";
+        document.getElementsByName("Fahrenheit")[0].value = "0";
+        document.getElementsByName("Meters")[0].value = "0";
+        document.getElementsByName("Feet")[0].value = "0";
+        document.getElementsByName("Kg")[0].value = "0";
+        document.getElementsByName("Pounds")[0].value = "0";
+        document.getElementsByName("UnitType")[0].checked = false;
+        document.getElementsByName("UnitType")[1].checked = false;
+    }
+</script>
+

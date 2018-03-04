@@ -1,0 +1,11 @@
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\bin\Debug\netcoreapp2.0\Conversion.deps.json
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\bin\Debug\netcoreapp2.0\Conversion.runtimeconfig.json
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\bin\Debug\netcoreapp2.0\Conversion.runtimeconfig.dev.json
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\bin\Debug\netcoreapp2.0\Conversion.dll
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\bin\Debug\netcoreapp2.0\Conversion.pdb
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\obj\Debug\netcoreapp2.0\Conversion.csprojResolveAssemblyReference.cache
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\obj\Debug\netcoreapp2.0\Conversion.csproj.CoreCompileInputs.cache
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\obj\Debug\netcoreapp2.0\Conversion.AssemblyInfoInputs.cache
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\obj\Debug\netcoreapp2.0\Conversion.AssemblyInfo.cs
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\obj\Debug\netcoreapp2.0\Conversion.dll
+C:\Users\Desiree Dias\source\repos\Conversion\Conversion\obj\Debug\netcoreapp2.0\Conversion.pdb
